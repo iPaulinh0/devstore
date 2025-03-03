@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, Search, ShoppingBag } from "lucide-react"
+import { DropdownMenuMobile } from "./dropdown-menu-mobile";
 
 export function Header() {
     return (
@@ -30,10 +31,10 @@ export function Header() {
                 </Link>
             </div>
 
-            <div className="hidden max-sm:flex max-sm:items-center gap-5">
+            <div className="md:hidden flex items-center gap-5">
                 <Search />
                 <ShoppingBag />
-                <Menu />
+                <DropdownMenuMobile />
             </div>
         </div>
     )
