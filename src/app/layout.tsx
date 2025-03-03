@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 const inter = Inter({
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["400", "700", "800"],
   variable: "--font-inter"
 })
 
@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en"  className={`${inter.variable}`}>
-      <body>{children}</body>
+      <body className='bg-zinc-950 text-zinc-50 antialiased'>{children}</body>
     </html>
   );
 }
