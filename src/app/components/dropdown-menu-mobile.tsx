@@ -4,10 +4,9 @@ import Image from "next/image"
 
 export function DropdownMenuMobile() {
     return(
-        <div>           
             <DropdownMenu>
                 <DropdownMenuTrigger>
-                    <Menu size={24}/>
+                    <Menu size={28} />
                 </DropdownMenuTrigger>
                 <DropdownMenuContent side="bottom" align="end" className="mt-3 bg-zinc-950 border-zinc-800">
                     <DropdownMenuItem className="text-zinc-200">
@@ -16,6 +15,5 @@ export function DropdownMenuMobile() {
                     </DropdownMenuItem>
                 </DropdownMenuContent>
             </DropdownMenu>
-        </div>
     )
 }
